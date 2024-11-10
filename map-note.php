@@ -1,9 +1,8 @@
 <?php
 /**
  * Plugin Name: Map Note
+ * Description: Simple Naver maps integration
  */
-
-use JetBrains\PhpStorm\NoReturn;
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -32,3 +31,5 @@ if ( ! function_exists( 'map_note_template_redirect' ) ) {
     }
     add_action( 'template_redirect', 'map_note_template_redirect' );
 }
+
+require_once __DIR__ . '/inc/admin/settings.php';
