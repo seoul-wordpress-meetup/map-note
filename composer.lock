@@ -1,0 +1,202 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "32e5279562917af5812fe1e0d21c9f30",
+    "packages": [
+        {
+            "name": "bojaghi/continy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/continy.git",
+                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/continy/zipball/14162712886b669c92f7a3f19daa5745dd0d8013",
+                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013",
+                "shasum": ""
+            },
+            "require": {
+                "bojaghi/contract": "^1.0",
+                "php": ">=8.0",
+                "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Continy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "Re-usable tiny container for WordPress themes and plugins. ",
+            "homepage": "https://github.com/bojaghi/continy",
+            "support": {
+                "issues": "https://github.com/bojaghi/continy/issues",
+                "source": "https://github.com/bojaghi/continy/tree/1.0.0"
+            },
+            "time": "2024-10-26T14:41:39+00:00"
+        },
+        {
+            "name": "bojaghi/contract",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/contract.git",
+                "reference": "a979fd6e506268e4b3f977ae4972e5b640295123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/contract/zipball/a979fd6e506268e4b3f977ae4972e5b640295123",
+                "reference": "a979fd6e506268e4b3f977ae4972e5b640295123",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Contract\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "Bojaghi contract",
+            "homepage": "https://github.com/bojaghi/contract",
+            "support": {
+                "issues": "https://github.com/bojaghi/contract/issues",
+                "source": "https://github.com/bojaghi/contract/tree/1.0.0"
+            },
+            "time": "2024-10-20T03:18:07+00:00"
+        },
+        {
+            "name": "bojaghi/vite-scripts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/vite-scripts.git",
+                "reference": "1c24b5944a92694903e6c910f55a776797181a6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/vite-scripts/zipball/1c24b5944a92694903e6c910f55a776797181a6f",
+                "reference": "1c24b5944a92694903e6c910f55a776797181a6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\ViteScripts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://github.com/bojaghi/vite-scripts",
+            "support": {
+                "issues": "https://github.com/bojaghi/vite-scripts/issues",
+                "source": "https://github.com/bojaghi/vite-scripts/tree/1.0.0"
+            },
+            "time": "2024-11-23T01:55:36+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "time": "2021-11-05T16:47:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

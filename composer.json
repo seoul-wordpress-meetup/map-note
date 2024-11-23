@@ -1,0 +1,18 @@
+{
+  "name": "seoul-wordpress-meetup/map-note-wp",
+  "description": "Add descriptions to your favorite locations",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "SWM\\MapNoteWP\\": "inc/"
+    }
+  },
+  "autoload-dev": {},
+  "require": {
+    "php": ">=8.0",
+    "bojaghi/continy": "^1.0",
+    "bojaghi/vite-scripts": "^1.0"
+  },
+  "version": "0.0.0",
+  "minimum-stability": "stable"
+}
