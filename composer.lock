@@ -56,20 +56,20 @@
         },
         {
             "name": "bojaghi/contract",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/contract.git",
-                "reference": "a979fd6e506268e4b3f977ae4972e5b640295123"
+                "reference": "884f3e340d8cffc8bec4ca627f5a5c096ee5c503"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/contract/zipball/a979fd6e506268e4b3f977ae4972e5b640295123",
-                "reference": "a979fd6e506268e4b3f977ae4972e5b640295123",
+                "url": "https://api.github.com/repos/bojaghi/contract/zipball/884f3e340d8cffc8bec4ca627f5a5c096ee5c503",
+                "reference": "884f3e340d8cffc8bec4ca627f5a5c096ee5c503",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.0"
             },
             "type": "library",
             "autoload": {
@@ -91,9 +91,9 @@
             "homepage": "https://github.com/bojaghi/contract",
             "support": {
                 "issues": "https://github.com/bojaghi/contract/issues",
-                "source": "https://github.com/bojaghi/contract/tree/1.0.0"
+                "source": "https://github.com/bojaghi/contract/tree/1.0.1"
             },
-            "time": "2024-10-20T03:18:07+00:00"
+            "time": "2024-11-27T10:33:39+00:00"
         },
         {
             "name": "bojaghi/custom-posts",
