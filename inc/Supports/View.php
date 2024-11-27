@@ -1,6 +1,6 @@
 <?php
 
-namespace SWM\MapNoteWP\Views;
+namespace SWM\MapNoteWP\Supports;
 
 use Bojaghi\Contract\Support;
 

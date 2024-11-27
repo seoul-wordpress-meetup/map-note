@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32e5279562917af5812fe1e0d21c9f30",
+    "content-hash": "a57a0d74a60a7c45cea2594ce8b8d6a2",
     "packages": [
         {
             "name": "bojaghi/continy",
@@ -94,6 +94,86 @@
                 "source": "https://github.com/bojaghi/contract/tree/1.0.0"
             },
             "time": "2024-10-20T03:18:07+00:00"
+        },
+        {
+            "name": "bojaghi/custom-posts",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/custom-posts.git",
+                "reference": "018219acceeb6f638173a73e71954c0b7ddc696f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/custom-posts/zipball/018219acceeb6f638173a73e71954c0b7ddc696f",
+                "reference": "018219acceeb6f638173a73e71954c0b7ddc696f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Cpt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "WordPress custom post type package.",
+            "homepage": "https://github.com/bojaghi/custom-posts",
+            "support": {
+                "issues": "https://github.com/bojaghi/custom-posts/issues",
+                "source": "https://github.com/bojaghi/custom-posts/tree/1.0.1"
+            },
+            "time": "2024-11-24T14:46:49+00:00"
+        },
+        {
+            "name": "bojaghi/custom-taxonomies",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/custom-taxonomies.git",
+                "reference": "a547e5e81cb42f40bd3fde36a6a848b685912d62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/custom-taxonomies/zipball/a547e5e81cb42f40bd3fde36a6a848b685912d62",
+                "reference": "a547e5e81cb42f40bd3fde36a6a848b685912d62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Tax\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "WordPress taxonomy package",
+            "homepage": "https://github.com/bojaghi/custom-taxonomies",
+            "support": {
+                "issues": "https://github.com/bojaghi/custom-taxonomies/issues",
+                "source": "https://github.com/bojaghi/custom-taxonomies/tree/1.0.0"
+            },
+            "time": "2024-11-24T14:43:33+00:00"
         },
         {
             "name": "bojaghi/vite-scripts",

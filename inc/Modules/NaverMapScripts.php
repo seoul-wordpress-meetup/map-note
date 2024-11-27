@@ -6,13 +6,13 @@ use Bojaghi\Contract\Module;
 
 class NaverMapScripts implements Module
 {
-    public function __construct()
+    public function __construct(string $nCloudClientId = '')
     {
         wp_register_script(
-            handle: 'swc-naver-map',
+            handle: 'mnp-naver-map',
             src: add_query_arg(
                 'ncpClientId',
-                '', // TODO: change this.
+                $nCloudClientId,
                 'https://oapi.map.naver.com/openapi/v3/maps.js',
             ),
             ver: null,
@@ -25,8 +25,8 @@ class NaverMapScripts implements Module
 
     public function enqueueNaverMap(): void
     {
-        if (!wp_script_is('swc-naver-map')) {
-            wp_enqueue_script('swc-naver-map');
+        if (!wp_script_is('mnp-naver-map')) {
+            wp_enqueue_script('mnp-naver-map');
         }
     }
 }

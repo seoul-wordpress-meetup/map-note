@@ -29,7 +29,7 @@ if (!function_exists('mapNote')) {
 
         if (is_null($continy)) {
             try {
-                $continy = \Bojaghi\Continy\ContinyFactory::create(__DIR__ . '/inc/setup.php');
+                $continy = \Bojaghi\Continy\ContinyFactory::create(__DIR__ . '/conf/continy-setup.php');
             } catch (\Bojaghi\Continy\COntinyException|\Bojaghi\Continy\ContinyNotFoundException $e) {
                 wp_die($e->getMessage());
             }
