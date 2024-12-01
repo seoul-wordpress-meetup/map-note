@@ -16,7 +16,7 @@ class Post implements Module
         if (CPT_MAP_PLACE === $postType) {
             add_meta_box(
                 id: 'swm-edit-map-place',
-                title: __('Place Map', 'swm-map-note'),
+                title: __('Place Map', 'map-note-wp'),
                 callback: function () {
                     mapNoteGet(\SWM\MapNoteWP\Supports\Admin\MetaBox\Place::class)->displayMetaBox();
                 },

@@ -5,10 +5,12 @@
  * Plugin URI:        https://github.com/seoul-wordpress-meetup/map-note-wp
  * Author:            Seoul WordPress Meetup
  * Author URI:        https://www.meetup.com/ko-KR/wordpress-meetup-seoul/
- * Version:           0.0.0
+ * Version:           0.1.0
  * Requires PHP:      8.0
  * Requires at least:
  */
+
+use Bojaghi\Template\Template;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -53,6 +55,21 @@ if (!function_exists('mapNoteGet')) {
         } catch (\Bojaghi\Continy\COntinyException|\Bojaghi\Continy\ContinyNotFoundException $e) {
             return null;
         }
+    }
+}
+
+if (!function_exists('mapNoteTmpl')) {
+    function mapNoteTmpl(string $tmplName, array $context = []): string
+    {
+        $output = '';
+        $tmpl   = mapNoteGet('template');
+
+        if ($tmpl) {
+            /** @var Template $tmpl */
+            $output = $tmpl->template($tmplName, $context);
+        }
+
+        return $output;
     }
 }
 

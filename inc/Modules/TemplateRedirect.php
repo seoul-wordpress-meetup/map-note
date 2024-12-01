@@ -8,17 +8,22 @@ use SWM\MapNoteWP\Supports\MapNoteView;
 
 class TemplateRedirect implements Module
 {
+    private int $mapPage;
+
     public function __construct(
+        Options                 $options,
         private NaverMapScripts $naverMapScripts,
         private ViteScript      $viteScript,
     )
     {
         add_action('template_redirect', [$this, 'templateRedirect'], 9999);
+
+        $this->mapPage = (int)$options->map_note_wp->get()['map_page'] ?? '';
     }
 
     public function templateRedirect(): void
     {
-        if (($post = get_post()) && 'map-note' === $post->post_name) {
+        if (($post = get_post()) && $this->mapPage === $post->ID) {
             mapNoteGet(MapNoteView::class)->display();
             exit;
         }

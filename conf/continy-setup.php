@@ -15,9 +15,12 @@ return [
         'init'       => 0,
     ],
     'arguments' => [
+        'customFields'     => [__DIR__ . '/custom-fields.php'],
         'customPosts'      => [__DIR__ . '/custom-posts.php'],
         'customTaxonomies' => [__DIR__ . '/custom-taxonomies.php'],
         'naverMapScripts'  => [defined('NCLOUD_CLIENT_ID') ? NCLOUD_CLIENT_ID : ''],
+        'options'          => [__DIR__ . '/options.php'],
+        'template'         => [['scopes' => [dirname(__DIR__) . '/inc/Templates']]],
         'viteScripts'      => fn(Continy $continy) => [
             [
                 'distBaseUrl'  => plugins_url('dist', $continy->getMain()),
@@ -27,12 +30,19 @@ return [
         ],
     ],
     'bindings'  => [
-        'admin/Post'       => Modules\Admin\Post::class,
+        // Bojaghi vendors
+        'customFields'     => Bojaghi\Fields\Modules\CustomFields::class,
         'customPosts'      => Bojaghi\Cpt\CustomPosts::class,
         'customTaxonomies' => Bojaghi\Tax\CustomTaxonomies::class,
-        'naverMapScripts'  => Modules\NaverMapScripts::class,
-        'templateRedirect' => Modules\TemplateRedirect::class,
+        'template'         => Bojaghi\Template\Template::class,
         'viteScripts'      => Bojaghi\ViteScripts\ViteScript::class,
+        // In-house modules
+        'admin/Post'       => Modules\Admin\Post::class,
+        'admin/settings'   => Modules\Admin\Settings::class,
+        'kses'             => Modules\KSES::class,
+        'naverMapScripts'  => Modules\NaverMapScripts::class,
+        'options'          => Modules\Options::class,
+        'templateRedirect' => Modules\TemplateRedirect::class,
     ],
     'modules'   => [
         'admin_init' => [
@@ -42,12 +52,17 @@ return [
         ],
         'init'       => [
             Continy::PR_HIGH    => [
+                'template',
                 'naverMapScripts',
                 'viteScripts',
             ],
             Continy::PR_DEFAULT => [
+                'admin/settings',
+                'customFields',
                 'customPosts',
                 'customTaxonomies',
+                'kses',
+                'options',
                 'templateRedirect',
             ],
         ]
